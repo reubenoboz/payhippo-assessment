@@ -1,0 +1,13 @@
+@import '.././../assets/scss/variables';
+
+.footer {
+    text-align: center;
+    .right_reserved {
+        margin-bottom: 0.7rem;
+    };
+    .footer_link_warapper{
+        .footer_link_separator{
+            margin: 0 0.3rem
+        }
+    }
+}

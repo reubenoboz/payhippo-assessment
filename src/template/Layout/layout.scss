@@ -1,0 +1,10 @@
+@import '../../assets/scss/mixins';
+
+.main_container {
+    min-height: 70vh;
+    width: 30%;
+    margin: 0 auto;
+    @include small-screens{
+        width: 80%;
+    }
+}

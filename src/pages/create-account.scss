@@ -1,0 +1,11 @@
+
+.create_account_stepper{
+    display: flex;
+    .stepper{
+        width: 30%;
+        padding: 1.5rem
+    }
+    .stepper_secription{
+        width: 70%;
+    }
+}

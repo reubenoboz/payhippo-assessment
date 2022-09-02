@@ -1,0 +1,13 @@
+.steps{
+    transition: all 0.3s ease-in-out;
+    .action_buttons {
+        display: flex;
+        justify-content: space-between;
+        .back_action{
+            width: 25%;
+        }
+        .next_action {
+            width: 70%;
+        }
+    }
+}

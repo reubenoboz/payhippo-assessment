@@ -1,0 +1,43 @@
+@import "../../assets/scss/variables";
+
+.select {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.7rem;
+  .select_label {
+    color: $text_grey;
+  }
+  .select_wrapper {
+    padding: 1rem 2rem;
+    border: 1.5px solid $border_grey;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    .select_icon {
+        color: $primary;
+    }
+    .select_field {
+      outline: none;
+      appearance: none;
+      border: none;
+      flex-grow: 1;
+      &::-ms-expand {
+        display: none !important;
+      }
+    }
+    &:hover {
+      border-color: $border_primary;
+    }
+    &:focus-within {
+      border-color: $border_primary;
+    }
+  }
+
+  .error_text {
+    font-size: small;
+    color: $error_text;
+    transition: all 0.3s ease-in-out;
+  }
+}

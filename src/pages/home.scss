@@ -1,0 +1,21 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/mixins';
+
+.title {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.card_background {
+    background-color: lighten($color: $bg_primary, $amount: 54%);
+    @include rounded();
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+}
+
+.button_wrapper{
+    margin: 0 auto;
+    margin-top: 3rem;
+}

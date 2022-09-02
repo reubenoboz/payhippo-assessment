@@ -1,0 +1,39 @@
+@import "../../assets/scss/variables";
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.7rem;
+  .input_label {
+    color: $text_grey;
+  }
+  .input_wrapper {
+    padding: 1rem 2rem;
+    border: 1.5px solid $border_grey;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    .input_icon {
+        color: $primary;
+    }
+    .input_field {
+      outline: none;
+      border: none;
+      flex-grow: 1;
+    }
+    &:hover {
+      border-color: $border_primary;
+    }
+    &:focus-within {
+      border-color: $border_primary;
+    }
+  }
+
+  .error_text {
+    font-size: small;
+    color: $error_text;
+    transition: all 0.3s ease-in-out;
+  }
+}
